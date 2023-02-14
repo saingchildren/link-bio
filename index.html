@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>sic's link-bio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color1: 0x10c01,
+          color2: 0x213434,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 500);
+      });
+    </script>
+  </head>
+  <body>
+    <main id="main">
+      <div id="vanta"></div>
+      <header>
+        <img src="./images/avatar.png" />
+        <h1>Yi-Long Wang</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="./images/homepage.svg" width="40" />
+            Offical Website</a
+          >
+        </li>
+        <li>
+          <a href="https://www.facebook.com/people/%E7%8E%8B%E4%BA%A6%E7%80%A7/100001620405943/">
+            <img src="./images/facebook.svg" width="40" />
+            Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/saingchildren">
+            <img src="./images/github.svg" width="40" />
+            Github</a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
